@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNest Realty | Premium Residential & Investment Properties in Pune</title>
+    <meta name="description" content="Explore premium residential properties, luxury apartments, villas, and commercial real estate across Baner, Wakad, Hinjewadi, and Kharadi with PrimeNest Realty Pune.">
+    <meta name="keywords" content="Real Estate Pune, Luxury Apartments Baner, Flats in Hinjewadi, PrimeNest Realty, Property for Sale Pune">
+    <meta name="author" content="PrimeNest Realty Demo">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="PrimeNest Realty | Premium Real Estate in Pune">
+    <meta property="og:description" content="Discover modern apartments, luxury villas, and plots in Pune's prime locations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Favicon SVG Data URI -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C5A059'><path d='M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z'/></svg>">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config for Theme Branding -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0A192F',
+                            900: '#0A111E',
+                            950: '#050B14'
+                        },
+                        gold: {
+                            400: '#E6CA65',
+                            500: '#C5A059',
+                            600: '#A8833E'
+                        },
+                        beige: {
+                            50: '#FAF8F5',
+                            100: '#F7F4EF',
+                            200: '#EDE7DE'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Overrides */
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF8F5;
+            color: #1E293B;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A059 50%, #A8833E 100%);
+        }
+
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #F3E5AB 0%, #C5A059 50%, #9B762B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(10, 17, 30, 0.75) 0%, rgba(10, 17, 30, 0.85) 100%);
+        }
+
+        /* Focus Ring Customization for Accessibility */
+        *:focus-visible {
+            outline: 2px solid #C5A059;
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col antialiased">
+
+    <!-- Top Portfolio Banner Disclosure -->
+    <div class="bg-navy-950 text-gold-400 text-xs py-2 px-4 text-center font-medium tracking-wide flex justify-center items-center gap-2 border-b border-navy-800 z-50">
+        <i class="fa-solid fa-circle-info text-gold-500"></i>
+        <span><strong>PORTFOLIO DEMO:</strong> This website is a demonstration created by a freelance website developer. All property listings and client details are fictional.</span>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-navy-800 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Identity -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center text-navy-900 font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight block text-white leading-none">PrimeNest</span>
+                        <span class="text-[10px] tracking-widest text-gold-400 font-semibold uppercase block mt-1">Realty • Pune</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#home" class="hover:text-gold-400 transition-colors py-1">Home</a>
+                    <a href="#properties" class="hover:text-gold-400 transition-colors py-1">Properties</a>
+                    <a href="#categories" class="hover:text-gold-400 transition-colors py-1">Categories</a>
+                    <a href="#why-us" class="hover:text-gold-400 transition-colors py-1">Why Us</a>
+                    <a href="#about" class="hover:text-gold-400 transition-colors py-1">About Us</a>
+                    <a href="#contact" class="hover:text-gold-400 transition-colors py-1">Contact</a>
+                </nav>
+
+                <!-- Action Button Desktop -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="#list-property" class="gold-gradient text-navy-950 hover:brightness-110 font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-plus-circle mr-1.5"></i> List Your Property
+                    </a>
+                </div>
+
+                <!-- Mobile Navigation Toggle -->
+                <button type="button" id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-navy-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-navy-800 hover:text-gold-400">Home</a>
+            <a href="#properties" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-navy-800 hover:text-gold-400">Properties</a>
+            <a href="#categories" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-navy-800 hover:text-gold-400">Categories</a>
+            <a href="#why-us" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-navy-800 hover:text-gold-400">Why Us</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-navy-800 hover:text-gold-400">About Us</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-navy-800 hover:text-gold-400">Contact</a>
+            <div class="pt-2">
+                <a href="#list-property" class="mobile-link block w-full text-center gold-gradient text-navy-950 font-bold px-4 py-3 rounded-lg text-sm">
+                    <i class="fa-solid fa-plus-circle mr-1.5"></i> List Your Property
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section id="home" class="relative bg-navy-900 text-white min-h-[600px] lg:min-h-[680px] flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
+            <!-- Background Image Overlay -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Luxury Real Estate Property in Pune" class="w-full h-full object-cover object-center transform scale-105" loading="eager" onerror="this.src='https://placehold.co/1920x1080/0A192F/C5A059?text=PrimeNest+Realty'">
+                <div class="absolute inset-0 hero-overlay"></div>
+            </div>
+
+            <div class="relative z-10 max-w-5xl mx-auto text-center space-y-8 my-auto">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-gold-500/20 border border-gold-500/40 text-gold-300 text-xs sm:text-sm font-medium tracking-wide">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Pune's Premier Real Estate Showcase</span>
+                </div>
+
+                <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                    Discover a Property That <span class="gold-text-gradient italic">Feels Like Home</span>.
+                </h1>
+
+                <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                    Explore high-end residential apartments, premium villas, plots, and investment opportunities across prime localities in Pune.
+                </p>
+
+                <!-- HERO FILTER & SEARCH PANEL -->
+                <div class="bg-navy-900/90 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/10 shadow-2xl text-left max-w-4xl mx-auto">
+                    <!-- Buy/Rent Tabs -->
+                    <div class="flex space-x-2 mb-4 border-b border-white/10 pb-3">
+                        <button type="button" id="tab-buy" onclick="setListingType('Buy')" class="px-5 py-2 rounded-lg text-sm font-semibold transition-all gold-gradient text-navy-950">
+                            Buy Property
+                        </button>
+                        <button type="button" id="tab-rent" onclick="setListingType('Rent')" class="px-5 py-2 rounded-lg text-sm font-semibold transition-all text-slate-300 hover:text-white hover:bg-white/5">
+                            Rent
+                        </button>
+                        <button type="button" id="tab-all" onclick="setListingType('All')" class="px-5 py-2 rounded-lg text-sm font-semibold transition-all text-slate-300 hover:text-white hover:bg-white/5">
+                            Show All
+                        </button>
+                    </div>
+
+                    <!-- Search Form Inputs -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                        <!-- Locality Selector -->
+                        <div>
+                            <label for="search-locality" class="block text-xs font-medium text-slate-300 mb-1">Locality in Pune</label>
+                            <select id="search-locality" class="w-full bg-navy-800 text-white border border-slate-700 rounded-lg px-3 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                                <option value="">All Localities</option>
+                                <option value="Baner">Baner</option>
+                                <option value="Wakad">Wakad</option>
+                                <option value="Hinjewadi">Hinjewadi</option>
+                                <option value="Kharadi">Kharadi</option>
+                                <option value="Hadapsar">Hadapsar</option>
+                                <option value="Bavdhan">Bavdhan</option>
+                            </select>
+                        </div>
+
+                        <!-- Property Type Selector -->
+                        <div>
+                            <label for="search-type" class="block text-xs font-medium text-slate-300 mb-1">Property Type</label>
+                            <select id="search-type" class="w-full bg-navy-800 text-white border border-slate-700 rounded-lg px-3 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                                <option value="">All Property Types</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Villa">Villa</option>
+                                <option value="Plot">Plot</option>
+                                <option value="Commercial">Commercial</option>
+                            </select>
+                        </div>
+
+                        <!-- Budget Selector -->
+                        <div>
+                            <label for="search-budget" class="block text-xs font-medium text-slate-300 mb-1">Max Budget (INR)</label>
+                            <select id="search-budget" class="w-full bg-navy-800 text-white border border-slate-700 rounded-lg px-3 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                                <option value="">Any Budget</option>
+                                <option value="5000000">Up to ₹50 Lakhs</option>
+                                <option value="10000000">Up to ₹1 Crore</option>
+                                <option value="20000000">Up to ₹2 Crores</option>
+                                <option value="30000000">Up to ₹3 Crores+</option>
+                            </select>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex items-end space-x-2">
+                            <button type="button" onclick="executePropertySearch()" class="flex-1 gold-gradient hover:brightness-110 text-navy-950 font-bold py-2.5 px-4 rounded-lg text-sm shadow-md transition-all flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>Search</span>
+                            </button>
+                            <button type="button" onclick="resetPropertyFilters()" title="Reset Filters" class="bg-navy-800 hover:bg-slate-700 text-slate-300 py-2.5 px-3 rounded-lg border border-slate-700 transition-colors">
+                                <i class="fa-solid fa-rotate-left"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <a href="#properties" class="inline-flex items-center text-xs sm:text-sm text-gold-400 hover:text-gold-300 font-medium space-x-2 transition-colors">
+                        <span>Or click here to explore all featured properties below</span>
+                        <i class="fa-solid fa-arrow-down-long animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROPERTIES SECTION -->
+        <section id="properties" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-widest block mb-2">Prime Listings</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900">Featured Properties in Pune</h2>
+                </div>
+                <p class="text-slate-600 text-sm sm:text-base max-w-md mt-3 md:mt-0">
+                    Handpicked residential flats, gated villas, and strategic commercial spaces across Pune's top tech hubs.
+                </p>
+            </div>
+
+            <!-- Active Filter Badge Bar -->
+            <div id="filter-status-bar" class="hidden mb-6 bg-beige-100 p-3 rounded-lg border border-beige-200 flex flex-wrap items-center justify-between gap-2 text-xs text-navy-900">
+                <div class="flex items-center space-x-2">
+                    <span class="font-bold"><i class="fa-solid fa-filter text-gold-600 mr-1"></i> Active Filter:</span>
+                    <span id="active-filter-text" class="text-slate-700">Showing all properties</span>
+                </div>
+                <button type="button" onclick="resetPropertyFilters()" class="text-gold-600 hover:text-gold-700 font-semibold underline">
+                    Clear Filters
+                </button>
+            </div>
+
+            <!-- PROPERTIES GRID -->
+            <div id="properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Injected via Javascript dynamically -->
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="empty-properties-state" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300 p-8 max-w-xl mx-auto my-8">
+                <div class="w-16 h-16 bg-beige-100 text-gold-600 rounded-full flex items-center justify-center mx-auto text-2xl mb-4">
+                    <i class="fa-solid fa-house-circle-xmark"></i>
+                </div>
+                <h3 class="text-xl font-bold text-navy-900 mb-2">No Matching Properties Found</h3>
+                <p class="text-slate-600 text-sm mb-6">We couldn't find any properties matching your current criteria. Try adjusting your locality, property type, or budget limits.</p>
+                <button type="button" onclick="resetPropertyFilters()" class="gold-gradient text-navy-950 font-bold px-6 py-2.5 rounded-lg text-sm shadow-md">
+                    Reset Search Filters
+                </button>
+            </div>
+
+            <div class="mt-8 text-center text-xs text-slate-500 italic">
+                * Note: All property pricing, availability, and attributes listed above are fictional sample data for demonstration purposes.
+            </div>
+        </section>
+
+        <!-- PROPERTY CATEGORIES SECTION -->
+        <section id="categories" class="bg-navy-900 text-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                    <span class="text-gold-400 font-bold text-xs uppercase tracking-widest block">Diverse Portfolio</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold">Explore By Category</h2>
+                    <p class="text-slate-400 text-sm sm:text-base">Click any category to filter available properties tailored to your exact lifestyle and investment needs.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
+                    <!-- Category 1 -->
+                    <button type="button" onclick="filterByCategory('Apartment')" class="group bg-navy-800 hover:bg-gold-500/10 border border-navy-800 hover:border-gold-500/50 rounded-2xl p-6 text-center transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center mx-auto text-xl mb-3 transition-colors">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="font-bold text-sm sm:text-base mb-1">Apartments</h3>
+                        <p class="text-xs text-slate-400">Luxury Flats</p>
+                    </button>
+
+                    <!-- Category 2 -->
+                    <button type="button" onclick="filterByCategory('Villa')" class="group bg-navy-800 hover:bg-gold-500/10 border border-navy-800 hover:border-gold-500/50 rounded-2xl p-6 text-center transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center mx-auto text-xl mb-3 transition-colors">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                        <h3 class="font-bold text-sm sm:text-base mb-1">Villas</h3>
+                        <p class="text-xs text-slate-400">Gated Enclaves</p>
+                    </button>
+
+                    <!-- Category 3 -->
+                    <button type="button" onclick="filterByCategory('Plot')" class="group bg-navy-800 hover:bg-gold-500/10 border border-navy-800 hover:border-gold-500/50 rounded-2xl p-6 text-center transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center mx-auto text-xl mb-3 transition-colors">
+                            <i class="fa-solid fa-vector-square"></i>
+                        </div>
+                        <h3 class="font-bold text-sm sm:text-base mb-1">Plots</h3>
+                        <p class="text-xs text-slate-400">NA Land</p>
+                    </button>
+
+                    <!-- Category 4 -->
+                    <button type="button" onclick="filterByCategory('Commercial')" class="group bg-navy-800 hover:bg-gold-500/10 border border-navy-800 hover:border-gold-500/50 rounded-2xl p-6 text-center transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center mx-auto text-xl mb-3 transition-colors">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="font-bold text-sm sm:text-base mb-1">Commercial</h3>
+                        <p class="text-xs text-slate-400">Offices & Retail</p>
+                    </button>
+
+                    <!-- Category 5 -->
+                    <button type="button" onclick="filterByListingType('Rent')" class="group bg-navy-800 hover:bg-gold-500/10 border border-navy-800 hover:border-gold-500/50 rounded-2xl p-6 text-center transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center mx-auto text-xl mb-3 transition-colors">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <h3 class="font-bold text-sm sm:text-base mb-1">Rental Homes</h3>
+                        <p class="text-xs text-slate-400">Furnished / Unfurnished</p>
+                    </button>
+
+                    <!-- Category 6 -->
+                    <button type="button" onclick="resetPropertyFilters()" class="group bg-navy-800 hover:bg-gold-500/10 border border-navy-800 hover:border-gold-500/50 rounded-2xl p-6 text-center transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 group-hover:bg-gold-500 group-hover:text-navy-950 flex items-center justify-center mx-auto text-xl mb-3 transition-colors">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-bold text-sm sm:text-base mb-1">Investment</h3>
+                        <p class="text-xs text-slate-400">High Return</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US SECTION -->
+        <section id="why-us" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-gold-600 font-bold text-xs uppercase tracking-widest block">Client Focused</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900">Why Choose PrimeNest Realty</h2>
+                <p class="text-slate-600 text-sm sm:text-base">We prioritize clarity, market intelligence, and seamless communication to help you navigate Pune's real estate ecosystem.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Pillar 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-beige-100 text-gold-600 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="font-bold text-navy-900 text-lg mb-2">Personalised Discovery</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Tailored recommendations aligned precisely with your lifestyle needs and budget scope.</p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-beige-100 text-gold-600 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="font-bold text-navy-900 text-lg mb-2">Clear Communication</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Transparent dialogue without hidden surprises or high-pressure advisory tactics.</p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-beige-100 text-gold-600 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="font-bold text-navy-900 text-lg mb-2">Local Knowledge</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">In-depth familiarity with Pune’s IT corridors, infra developments, and upcoming hotspots.</p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-beige-100 text-gold-600 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="font-bold text-navy-900 text-lg mb-2">End-to-End Support</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Guidance through shortlisting, property visits, and initial documentation inquiries.</p>
+                </div>
+
+                <!-- Pillar 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-beige-100 text-gold-600 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="font-bold text-navy-900 text-lg mb-2">Investment Insights</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Focused analysis on rental yields, appreciation rates, and developer reliability.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOUR STEP PROCESS SECTION -->
+        <section class="bg-beige-100/70 border-y border-beige-200 py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-widest block">Seamless Journey</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900">How We Guide You Home</h2>
+                    <p class="text-slate-600 text-sm sm:text-base">A structured, stress-free pathway toward finding your next property.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+                        <span class="text-4xl font-serif font-bold text-gold-500/40 block mb-2">01</span>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Tell Us Your Requirements</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Share your preferred locality, budget, space criteria, and timeline using our interactive forms.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+                        <span class="text-4xl font-serif font-bold text-gold-500/40 block mb-2">02</span>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Explore Suitable Properties</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Review curated options filtered precisely for your preference with complete spec transparency.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+                        <span class="text-4xl font-serif font-bold text-gold-500/40 block mb-2">03</span>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Arrange a Property Visit</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Schedule convenient site visits to inspect architecture, amenities, and surrounding infrastructure.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-10">
+                        <span class="text-4xl font-serif font-bold text-gold-500/40 block mb-2">04</span>
+                        <h3 class="text-lg font-bold text-navy-900 mb-2">Move Forward With Confidence</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Receive clarity on next steps and advisory regarding property acquisition protocols.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center text-xs text-slate-500 italic">
+                    * Note: The above workflow illustrates our proposed service methodology. Site visits and real-time scheduling are simulated for website portfolio presentation.
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US / BRAND DISCLOSURE SECTION -->
+        <section id="about" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-widest block">About PrimeNest</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 leading-tight">
+                        Modern Real Estate Solutions Designed for Pune's Dynamic Market.
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        PrimeNest Realty is a fictional luxury real estate brand created as a high-performance demonstration project. It showcases modern web design, responsive layouts, real-time property filtering, and high-converting lead generation capabilities for real estate professionals.
+                    </p>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Whether assisting IT professionals searching in Hinjewadi and Baner, or families exploring gated communities in Wakad and Kharadi, PrimeNest delivers an intuitive digital property exploration experience.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <div class="bg-beige-100 p-4 rounded-xl border border-beige-200 text-center flex-1 min-w-[120px]">
+                            <span class="font-serif font-bold text-2xl text-navy-900 block">6+</span>
+                            <span class="text-xs text-slate-600 font-medium">Prime Localities</span>
+                        </div>
+                        <div class="bg-beige-100 p-4 rounded-xl border border-beige-200 text-center flex-1 min-w-[120px]">
+                            <span class="font-serif font-bold text-2xl text-navy-900 block">100%</span>
+                            <span class="text-xs text-slate-600 font-medium">Responsive Layout</span>
+                        </div>
+                        <div class="bg-beige-100 p-4 rounded-xl border border-beige-200 text-center flex-1 min-w-[120px]">
+                            <span class="font-serif font-bold text-2xl text-navy-900 block">Instant</span>
+                            <span class="text-xs text-slate-600 font-medium">Filter Engine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80" alt="PrimeNest Realty Modern Office Concept" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/800x600/0A192F/C5A059?text=PrimeNest+Office'">
+                    </div>
+                    <!-- Badge Overlay -->
+                    <div class="absolute -bottom-6 -left-6 bg-navy-900 text-white p-6 rounded-2xl shadow-xl hidden sm:block border border-gold-500/30 max-w-xs">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="fa-solid fa-laptop-code text-gold-400 text-2xl"></i>
+                            <span class="font-bold text-sm">Developer Showcase</span>
+                        </div>
+                        <p class="text-xs text-slate-300">Created to demonstrate frontend engineering & real estate UI excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEAD GENERATION / BUYER ENQUIRY SECTION -->
+        <section class="bg-navy-900 text-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto bg-navy-800 p-6 sm:p-10 rounded-3xl border border-white/10 shadow-2xl">
+                <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
+                    <span class="text-gold-400 font-bold text-xs uppercase tracking-widest block">Get In Touch</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold">Looking for Your Next Property?</h2>
+                    <p class="text-slate-300 text-xs sm:text-sm">Submit your preferences below to receive curated recommendations matching your criteria in Pune.</p>
+                </div>
+
+                <!-- Form Notice -->
+                <div id="buyer-form-notice" class="hidden mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium"></div>
+
+                <form id="buyer-lead-form" onsubmit="handleFormSubmit(event, 'buyer')" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="buyer-name" class="block text-xs font-semibold text-slate-300 mb-1">Full Name *</label>
+                            <input type="text" id="buyer-name" required placeholder="e.g. Rahul Sharma" class="w-full bg-navy-900 text-white border border-slate-700 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                        </div>
+                        <div>
+                            <label for="buyer-phone" class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
+                            <input type="tel" id="buyer-phone" required placeholder="e.g. 9876543210" class="w-full bg-navy-900 text-white border border-slate-700 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label for="buyer-email" class="block text-xs font-semibold text-slate-300 mb-1">Email Address *</label>
+                            <input type="email" id="buyer-email" required placeholder="e.g. rahul@example.com" class="w-full bg-navy-900 text-white border border-slate-700 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                        </div>
+                        <div>
+                            <label for="buyer-intent" class="block text-xs font-semibold text-slate-300 mb-1">Purpose *</label>
+                            <select id="buyer-intent" required class="w-full bg-navy-900 text-white border border-slate-700 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                                <option value="Buy">Buy Residential</option>
+                                <option value="Rent">Rent Property</option>
+                                <option value="Investment">Investment Opportunity</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="buyer-locality" class="block text-xs font-semibold text-slate-300 mb-1">Preferred Locality *</label>
+                            <select id="buyer-locality" required class="w-full bg-navy-900 text-white border border-slate-700 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                                <option value="Baner">Baner</option>
+                                <option value="Wakad">Wakad</option>
+                                <option value="Hinjewadi">Hinjewadi</option>
+                                <option value="Kharadi">Kharadi</option>
+                                <option value="Hadapsar">Hadapsar</option>
+                                <option value="Bavdhan">Bavdhan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="buyer-message" class="block text-xs font-semibold text-slate-300 mb-1">Message / Specific Requirements</label>
+                        <textarea id="buyer-message" rows="3" placeholder="Tell us about BHK requirement, budget range, or preferred move-in date..." class="w-full bg-navy-900 text-white border border-slate-700 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full gold-gradient text-navy-950 font-bold py-3 px-6 rounded-lg text-sm shadow-lg hover:brightness-110 transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Submit Enquiry</span>
+                        </button>
+                    </div>
+
+                    <p class="text-[11px] text-slate-400 text-center pt-2">
+                        <i class="fa-solid fa-shield-halved mr-1"></i> Demo Notice: Frontend form submission logic only. No data is saved to a server in this portfolio build.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- LIST YOUR PROPERTY SECTION (OWNERS) -->
+        <section id="list-property" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+            <div class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-xl">
+                <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-widest block">For Property Owners</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-navy-900">List Your Property With Us</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm">Looking to sell or rent your home or commercial space in Pune? Share details below to initiate listing evaluation.</p>
+                </div>
+
+                <!-- Form Notice -->
+                <div id="seller-form-notice" class="hidden mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium"></div>
+
+                <form id="seller-lead-form" onsubmit="handleFormSubmit(event, 'seller')" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="owner-name" class="block text-xs font-semibold text-slate-700 mb-1">Owner Name *</label>
+                            <input type="text" id="owner-name" required placeholder="e.g. Priya Kulkarni" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                        </div>
+                        <div>
+                            <label for="owner-phone" class="block text-xs font-semibold text-slate-700 mb-1">Contact Number *</label>
+                            <input type="tel" id="owner-phone" required placeholder="e.g. 9812345678" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label for="owner-locality" class="block text-xs font-semibold text-slate-700 mb-1">Property Locality *</label>
+                            <select id="owner-locality" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                                <option value="Baner">Baner</option>
+                                <option value="Wakad">Wakad</option>
+                                <option value="Hinjewadi">Hinjewadi</option>
+                                <option value="Kharadi">Kharadi</option>
+                                <option value="Hadapsar">Hadapsar</option>
+                                <option value="Bavdhan">Bavdhan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="owner-type" class="block text-xs font-semibold text-slate-700 mb-1">Property Type *</label>
+                            <select id="owner-type" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                                <option value="Apartment">Apartment</option>
+                                <option value="Villa">Villa</option>
+                                <option value="Plot">Plot</option>
+                                <option value="Commercial">Commercial Space</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="owner-price" class="block text-xs font-semibold text-slate-700 mb-1">Expected Price (INR) *</label>
+                            <input type="text" id="owner-price" required placeholder="e.g. ₹95 Lakhs" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="owner-desc" class="block text-xs font-semibold text-slate-700 mb-1">Property Description & Area Details</label>
+                        <textarea id="owner-desc" rows="3" placeholder="Specify sq.ft area, floor level, furnishing status, parking availability..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-navy-900 hover:bg-navy-800 text-gold-400 font-bold py-3 px-6 rounded-lg text-sm shadow-md transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <span>Submit Property Listing Request</span>
+                        </button>
+                    </div>
+
+                    <p class="text-[11px] text-slate-500 text-center pt-2">
+                        <i class="fa-solid fa-circle-info mr-1"></i> Demo Notice: Submissions will trigger frontend confirmation. Connect a backend database or Email API for live operational hosting.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- SAMPLE TESTIMONIALS SECTION -->
+        <section class="bg-beige-100/70 border-t border-beige-200 py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-widest block">Illustrative Experiences</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900">What Sample Clients Say</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm">The following testimonials represent fictional sample feedback created for UI design demonstration.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="text-gold-500 text-sm flex space-x-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm italic">"Finding a 3 BHK in Baner with reasonable maintenance was effortless with PrimeNest. Clear pricing and zero hidden surprises."</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold flex items-center justify-center text-sm">
+                                AR
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-navy-900">Ananya Rao</h4>
+                                <span class="text-xs text-slate-500">Homebuyer • Baner, Pune</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="text-gold-500 text-sm flex space-x-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm italic">"As an IT professional in Hinjewadi, proximity to Phase 1 was essential. The property filtering helped me narrow options within minutes."</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold flex items-center justify-center text-sm">
+                                VK
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-navy-900">Vikram Kulkarni</h4>
+                                <span class="text-xs text-slate-500">Tenant • Hinjewadi, Pune</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="text-gold-500 text-sm flex space-x-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm italic">"Listed my commercial shop in Kharadi through PrimeNest. Excellent presentation and prompt enquiry turnarounds."</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold flex items-center justify-center text-sm">
+                                SM
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-navy-900">Suresh Mehta</h4>
+                                <span class="text-xs text-slate-500">Property Owner • Kharadi, Pune</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Info Panel -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-gold-600 font-bold text-xs uppercase tracking-widest block mb-2">Reach Out</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900">Contact Our Desk</h2>
+                        <p class="text-slate-600 text-sm mt-2">Have questions about listings in Pune? Get in touch with our team directly.</p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Office Location -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-beige-100 text-gold-600 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-navy-900">Office Location</h3>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">PrimeNest Tower, Baner Road, Baner, Pune, Maharashtra 411045, India</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Call -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-beige-100 text-gold-600 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-navy-900">Phone Contact</h3>
+                                <a href="tel:+919876543210" class="text-xs sm:text-sm text-slate-600 hover:text-gold-600 transition-colors mt-0.5 block">+91 98765 43210 (Fictional Demo)</a>
+                            </div>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-beige-100 text-gold-600 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-navy-900">Email Inquiry</h3>
+                                <a href="mailto:demo@primenestrealty.com" class="text-xs sm:text-sm text-slate-600 hover:text-gold-600 transition-colors mt-0.5 block">contact@primenestrealty.demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-beige-100 text-gold-600 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-navy-900">Working Hours (Illustrative)</h3>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Mon - Sat: 9:30 AM – 7:30 PM | Sun: By Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct WhatsApp Button CTA -->
+                    <div class="pt-2">
+                        <button type="button" onclick="openWhatsAppEnquiry('General Enquiry regarding Pune properties')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Chat directly on WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-lg">
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">Send Us a Quick Message</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm mb-6">Fill out your details and your message will be simulated through the frontend demonstrator.</p>
+
+                    <div id="contact-form-notice" class="hidden mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium"></div>
+
+                    <form id="general-contact-form" onsubmit="handleFormSubmit(event, 'contact')" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contact-name" class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+                                <input type="text" id="contact-name" required placeholder="e.g. Amit Patil" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                            </div>
+                            <div>
+                                <label for="contact-phone" class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+                                <input type="tel" id="contact-phone" required placeholder="e.g. 9822012345" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="contact-email" class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                            <input type="email" id="contact-email" required placeholder="e.g. amit@example.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none">
+                        </div>
+
+                        <div>
+                            <label for="contact-message" class="block text-xs font-semibold text-slate-700 mb-1">Message *</label>
+                            <textarea id="contact-message" required rows="4" placeholder="How can our real estate team assist you today?" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full gold-gradient text-navy-950 font-bold py-3 px-6 rounded-lg text-sm shadow-md hover:brightness-110 transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-navy-950 text-slate-400 text-sm border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center text-navy-900 font-bold text-lg">
+                            <i class="fa-solid fa-building-user"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold tracking-tight text-white">PrimeNest Realty</span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                        Find Your Place. Build Your Future. Premium real estate discovery and advisory services operating across Pune, Maharashtra.
+                    </p>
+                    <div class="flex space-x-3 text-slate-400">
+                        <a href="#home" class="w-8 h-8 rounded-full bg-navy-900 border border-navy-800 hover:text-gold-400 hover:border-gold-400 flex items-center justify-center transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                        <a href="#home" class="w-8 h-8 rounded-full bg-navy-900 border border-navy-800 hover:text-gold-400 hover:border-gold-400 flex items-center justify-center transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#home" class="w-8 h-8 rounded-full bg-navy-900 border border-navy-800 hover:text-gold-400 hover:border-gold-400 flex items-center justify-center transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h3 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#properties" class="hover:text-gold-400 transition-colors">Properties</a></li>
+                        <li><a href="#categories" class="hover:text-gold-400 transition-colors">Categories</a></li>
+                        <li><a href="#why-us" class="hover:text-gold-400 transition-colors">Why Choose Us</a></li>
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About Us</a></li>
+                        <li><a href="#list-property" class="hover:text-gold-400 transition-colors">List Your Property</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Prime Pune Localities -->
+                <div>
+                    <h3 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Pune Localities</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><button type="button" onclick="filterByLocality('Baner')" class="hover:text-gold-400 transition-colors">Baner</button></li>
+                        <li><button type="button" onclick="filterByLocality('Wakad')" class="hover:text-gold-400 transition-colors">Wakad</button></li>
+                        <li><button type="button" onclick="filterByLocality('Hinjewadi')" class="hover:text-gold-400 transition-colors">Hinjewadi</button></li>
+                        <li><button type="button" onclick="filterByLocality('Kharadi')" class="hover:text-gold-400 transition-colors">Kharadi</button></li>
+                        <li><button type="button" onclick="filterByLocality('Hadapsar')" class="hover:text-gold-400 transition-colors">Hadapsar</button></li>
+                        <li><button type="button" onclick="filterByLocality('Bavdhan')" class="hover:text-gold-400 transition-colors">Bavdhan</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Legal & Portfolio Disclaimer -->
+                <div>
+                    <h3 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Demo Notice</h3>
+                    <p class="text-[11px] text-slate-400 leading-relaxed">
+                        This site is a portfolio showcase built for demonstration. No real transaction processing, property reservation, or personal data storage occurs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Disclosure Bar -->
+            <div class="pt-8 border-t border-navy-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>&copy; <span id="copyright-year"></span> PrimeNest Realty. Portfolio Web Development Demo.</p>
+                <div class="inline-flex items-center space-x-2 text-gold-400/80 font-medium">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Built for GitHub Pages Hosting</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PROPERTY DETAIL MODAL DIALOG -->
+    <div id="property-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-navy-950/80 backdrop-blur-sm p-4 sm:p-6 md:p-10 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="relative bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl text-slate-800 border border-slate-200">
+            <!-- Modal Header / Close Button -->
+            <button type="button" onclick="closePropertyModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-navy-900/80 text-white hover:bg-navy-900 rounded-full flex items-center justify-center transition-colors" aria-label="Close Property Details Modal">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Dynamic Modal Content -->
+            <div id="modal-content-container">
+                <!-- Javascript will render details here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP FLOATING BUTTON -->
+    <button type="button" id="back-to-top" onclick="scrollToTop()" class="fixed bottom-6 right-6 z-30 w-12 h-12 gold-gradient text-navy-950 rounded-full shadow-xl flex items-center justify-center text-lg opacity-0 pointer-events-none transition-all duration-300 hover:scale-110" aria-label="Scroll back to top of page">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        /**
+         * Centralized Fictional Property Array
+         * Easily editable to add or modify listings
+         */
+        const propertiesData = [
+            {
+                id: 'prop-1',
+                title: 'The Grand Horizon Luxury Suites',
+                locality: 'Baner',
+                price: 14500000, // INR 1.45 Cr
+                formattedPrice: '₹1.45 Crore',
+                type: 'Apartment',
+                intent: 'Buy', // 'Buy' or 'Rent'
+                bhk: 3,
+                baths: 3,
+                sqft: 1850,
+                image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
+                shortDesc: 'Ultra-modern 3 BHK residence with expansive balconies and skyline view near Baner High Street.',
+                fullDesc: 'Located in the heart of Baner, The Grand Horizon offers premium 3 BHK apartments featuring Italian marble flooring, designer sanitaryware, dual-car parking, and access to a rooftop infinity pool. Situated within minutes of high-end dining and IT hubs.',
+                amenities: ['Rooftop Swimming Pool', 'Fully Equipped Gym', '24/7 Power Backup', 'Clubhouse', 'EV Charging Station', '2-Car Parking']
+            },
+            {
+                id: 'prop-2',
+                title: 'Greenwoods Serene Enclave',
+                locality: 'Wakad',
+                price: 8800000, // INR 88 Lakhs
+                formattedPrice: '₹88 Lakhs',
+                type: 'Apartment',
+                intent: 'Buy',
+                bhk: 2,
+                baths: 2,
+                sqft: 1120,
+                image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+                shortDesc: 'Spacious 2 BHK gated community apartment close to Mumbai-Pune Expressway.',
+                fullDesc: 'Greenwoods Serene Enclave is ideal for IT professionals and young families. Features landscaped podium gardens, children play zones, solar water heaters, and multi-tier security systems in Wakad.',
+                amenities: ['Landscaped Gardens', 'Children Play Area', '24/7 Security', 'Clubhouse', 'Jogging Track']
+            },
+            {
+                id: 'prop-3',
+                title: 'TechPark Residency Suites',
+                locality: 'Hinjewadi',
+                price: 35000, // INR 35,000 / month
+                formattedPrice: '₹35,000 / month',
+                type: 'Apartment',
+                intent: 'Rent',
+                bhk: 2,
+                baths: 2,
+                sqft: 1050,
+                image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
+                shortDesc: 'Fully furnished 2 BHK rental apartment near Phase 1 IT Park.',
+                fullDesc: 'Skip long commutes! Premium fully furnished 2 BHK flat featuring modular kitchen, high-speed Wi-Fi readiness, air conditioning, and full power backup directly adjacent to Hinjewadi Phase 1 tech campuses.',
+                amenities: ['Fully Furnished', 'High-Speed Wi-Fi Ready', 'Air Conditioned', 'Power Backup', 'Covered Parking']
+            },
+            {
+                id: 'prop-4',
+                title: 'Pinnacle Commercial Business Bay',
+                locality: 'Kharadi',
+                price: 21000000, // INR 2.10 Cr
+                formattedPrice: '₹2.10 Crore',
+                type: 'Commercial',
+                intent: 'Buy',
+                bhk: 0,
+                baths: 2,
+                sqft: 2200,
+                image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
+                shortDesc: 'Grade-A office space in Kharadi IT corridor with glass facade.',
+                fullDesc: 'A flagship commercial property suitable for corporate offices, software firms, or financial consultancies. Situated in Kharadi close to EON Free Zone with central air conditioning, cafeteria facilities, and high-speed elevators.',
+                amenities: ['Grade-A Infrastructure', 'Central AC', '4 High-Speed Elevators', 'Cafeteria Zone', 'Visitor Parking']
+            },
+            {
+                id: 'prop-5',
+                title: 'Royal Palms Sovereign Villa',
+                locality: 'Bavdhan',
+                price: 32000000, // INR 3.20 Cr
+                formattedPrice: '₹3.20 Crore',
+                type: 'Villa',
+                intent: 'Buy',
+                bhk: 4,
+                baths: 5,
+                sqft: 3400,
+                image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
+                shortDesc: 'Independent 4 BHK luxury villa with private lawn and sunset views.',
+                fullDesc: 'Experience private luxury living in Bavdhan. This independent 4 BHK villa boasts private lawns, double-height ceilings, automated security systems, modular kitchen, and personal terrace garden.',
+                amenities: ['Private Lawn', 'Terrace Garden', 'Smart Home Automation', '3-Car Garage', 'Servant Quarters']
+            },
+            {
+                id: 'prop-6',
+                title: 'Amanora View Modern Flat',
+                locality: 'Hadapsar',
+                price: 28000, // INR 28,000 / month
+                formattedPrice: '₹28,000 / month',
+                type: 'Apartment',
+                intent: 'Rent',
+                bhk: 2,
+                baths: 2,
+                sqft: 980,
+                image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
+                shortDesc: 'Semi-furnished rental apartment with panoramic city views in Hadapsar.',
+                fullDesc: 'Convenient semi-furnished 2 BHK apartment located near Magarpatta City and Cybercity. Features modern kitchen cabinets, wardrobes in all bedrooms, swimming pool access, and gym membership.',
+                amenities: ['Semi-Furnished', 'Swimming Pool', 'Gymnasium', 'Gated Security', 'Elevator']
+            }
+        ];
+
+        // Global State for Active Filters
+        let currentFilters = {
+            intent: 'All', // 'Buy', 'Rent', 'All'
+            locality: '',
+            type: '',
+            maxBudget: ''
+        };
+
+        const WHATSAPP_NUMBER = '919876543210'; // Configurable WhatsApp Contact Number
+
+        // DOM Loaded Initializer
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic copyright year
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+            // Mobile Menu Drawer Handler
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.classList.replace('fa-bars', 'fa-xmark');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                }
+            });
+
+            // Close mobile drawer when clicking any link
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                });
+            });
+
+            // Back to Top Button visibility scroll listener
+            const backToTopBtn = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+
+            // Keyboard listener for Escape key to close Modal
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closePropertyModal();
+                }
+            });
+
+            // Initial Property Grid Render
+            renderPropertiesGrid(propertiesData);
+        });
+
+        // Scroll Top Helper
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        /**
+         * Renders property listing cards into the grid
+         */
+        function renderPropertiesGrid(properties) {
+            const grid = document.getElementById('properties-grid');
+            const emptyState = document.getElementById('empty-properties-state');
+            const filterBar = document.getElementById('filter-status-bar');
+            const filterText = document.getElementById('active-filter-text');
+
+            grid.innerHTML = '';
+
+            if (properties.length === 0) {
+                grid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+            } else {
+                grid.classList.remove('hidden');
+                emptyState.classList.add('hidden');
+
+                properties.forEach(prop => {
+                    const card = document.createElement('div');
+                    card.className = 'bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group';
+
+                    card.innerHTML = `
+                        <div>
+                            <!-- Image Container -->
+                            <div class="relative h-56 overflow-hidden bg-slate-100">
+                                <img src="${prop.image}" alt="${prop.title} in ${prop.locality}, Pune" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/800x600/0A192F/C5A059?text=${encodeURIComponent(prop.title)}'">
+                                
+                                <!-- Badges -->
+                                <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                                    <span class="${prop.intent === 'Buy' ? 'bg-navy-900 text-gold-400' : 'bg-emerald-700 text-white'} text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                                        For ${prop.intent}
+                                    </span>
+                                    <span class="bg-white/90 backdrop-blur-md text-navy-900 text-[11px] font-semibold px-2.5 py-1 rounded-md shadow-sm">
+                                        ${prop.type}
+                                    </span>
+                                </div>
+
+                                <div class="absolute bottom-3 right-3 bg-navy-950/80 backdrop-blur-md text-gold-400 font-bold text-sm px-3 py-1 rounded-lg border border-gold-500/30">
+                                    ${prop.formattedPrice}
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="p-5 space-y-3">
+                                <div class="flex items-center text-xs text-gold-600 font-semibold space-x-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>${prop.locality}, Pune</span>
+                                </div>
+
+                                <h3 class="font-bold text-navy-900 text-lg leading-snug group-hover:text-gold-600 transition-colors line-clamp-1">
+                                    ${prop.title}
+                                </h3>
+
+                                <p class="text-slate-600 text-xs line-clamp-2 leading-relaxed">
+                                    ${prop.shortDesc}
+                                </p>
+
+                                <!-- Specs Pills -->
+                                <div class="flex items-center space-x-4 text-slate-500 text-xs pt-2 border-t border-slate-100">
+                                    ${prop.bhk > 0 ? `<div class="flex items-center space-x-1"><i class="fa-solid fa-bed text-gold-500"></i><span>${prop.bhk} BHK</span></div>` : ''}
+                                    <div class="flex items-center space-x-1"><i class="fa-solid fa-bath text-gold-500"></i><span>${prop.baths} Bath</span></div>
+                                    <div class="flex items-center space-x-1"><i class="fa-solid fa-ruler-combined text-gold-500"></i><span>${prop.sqft} sq.ft</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer CTAs -->
+                        <div class="p-5 pt-0 grid grid-cols-2 gap-2 mt-2">
+                            <button type="button" onclick="openPropertyModal('${prop.id}')" class="w-full bg-slate-100 hover:bg-navy-900 hover:text-white text-navy-900 font-bold py-2.5 px-3 rounded-lg text-xs transition-colors text-center">
+                                View Details
+                            </button>
+                            <button type="button" onclick="openWhatsAppEnquiry('Inquiry for ${encodeURIComponent(prop.title)} in ${prop.locality}')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-3 rounded-lg text-xs transition-colors flex items-center justify-center space-x-1">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                                <span>WhatsApp</span>
+                            </button>
+                        </div>
+                    `;
+
+                    grid.appendChild(card);
+                });
+            }
+
+            // Update filter bar UI status
+            const activeConditions = [];
+            if (currentFilters.intent !== 'All') activeConditions.push(`Purpose: ${currentFilters.intent}`);
+            if (currentFilters.locality) activeConditions.push(`Locality: ${currentFilters.locality}`);
+            if (currentFilters.type) activeConditions.push(`Type: ${currentFilters.type}`);
+            if (currentFilters.maxBudget) activeConditions.push(`Budget Limit set`);
+
+            if (activeConditions.length > 0) {
+                filterBar.classList.remove('hidden');
+                filterText.textContent = `${properties.length} results matching (${activeConditions.join(', ')})`;
+            } else {
+                filterBar.classList.add('hidden');
+            }
+        }
+
+        /**
+         * Set Intent Tabs (Buy, Rent, All)
+         */
+        function setListingType(intent) {
+            currentFilters.intent = intent;
+            
+            // Tab visual state updates
+            const tabBuy = document.getElementById('tab-buy');
+            const tabRent = document.getElementById('tab-rent');
+            const tabAll = document.getElementById('tab-all');
+
+            const activeClass = ['gold-gradient', 'text-navy-950'];
+            const inactiveClass = ['text-slate-300', 'hover:text-white', 'hover:bg-white/5'];
+
+            [tabBuy, tabRent, tabAll].forEach(tab => {
+                tab.classList.remove('gold-gradient', 'text-navy-950');
+                tab.classList.add('text-slate-300');
+            });
+
+            if (intent === 'Buy') tabBuy.classList.add('gold-gradient', 'text-navy-950');
+            else if (intent === 'Rent') tabRent.classList.add('gold-gradient', 'text-navy-950');
+            else tabAll.classList.add('gold-gradient', 'text-navy-950');
+
+            executePropertySearch();
+        }
+
+        /**
+         * Filters trigger logic based on user inputs
+         */
+        function executePropertySearch() {
+            const localitySelect = document.getElementById('search-locality').value;
+            const typeSelect = document.getElementById('search-type').value;
+            const budgetSelect = document.getElementById('search-budget').value;
+
+            currentFilters.locality = localitySelect;
+            currentFilters.type = typeSelect;
+            currentFilters.maxBudget = budgetSelect;
+
+            let filtered = propertiesData.filter(prop => {
+                // Filter Intent (Buy/Rent)
+                if (currentFilters.intent !== 'All' && prop.intent !== currentFilters.intent) return false;
+
+                // Filter Locality
+                if (currentFilters.locality && prop.locality !== currentFilters.locality) return false;
+
+                // Filter Type
+                if (currentFilters.type && prop.type !== currentFilters.type) return false;
+
+                // Filter Budget
+                if (currentFilters.maxBudget && prop.price > parseInt(currentFilters.maxBudget)) return false;
+
+                return true;
+            });
+
+            renderPropertiesGrid(filtered);
+        }
+
+        /**
+         * Reset all filters to default
+         */
+        function resetPropertyFilters() {
+            document.getElementById('search-locality').value = '';
+            document.getElementById('search-type').value = '';
+            document.getElementById('search-budget').value = '';
+            
+            currentFilters = {
+                intent: 'All',
+                locality: '',
+                type: '',
+                maxBudget: ''
+            };
+
+            setListingType('All');
+        }
+
+        /**
+         * Quick Category Card Click Filters
+         */
+        function filterByCategory(type) {
+            resetPropertyFilters();
+            document.getElementById('search-type').value = type;
+            executePropertySearch();
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function filterByLocality(locality) {
+            resetPropertyFilters();
+            document.getElementById('search-locality').value = locality;
+            executePropertySearch();
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function filterByListingType(intent) {
+            setListingType(intent);
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        /**
+         * Modal Logic
+         */
+        function openPropertyModal(propertyId) {
+            const prop = propertiesData.find(p => p.id === propertyId);
+            if (!prop) return;
+
+            const container = document.getElementById('modal-content-container');
+            container.innerHTML = `
+                <!-- Modal Banner Image -->
+                <div class="relative h-64 sm:h-80 overflow-hidden bg-slate-900">
+                    <img src="${prop.image}" alt="${prop.title}" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/800x600/0A192F/C5A059?text=${encodeURIComponent(prop.title)}'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-wider block mb-1">
+                            <i class="fa-solid fa-location-dot mr-1"></i> ${prop.locality}, Pune
+                        </span>
+                        <h2 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold">${prop.title}</h2>
+                    </div>
+                </div>
+
+                <!-- Modal Body Details -->
+                <div class="p-6 sm:p-8 space-y-6">
+                    <!-- Key Specs Row -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-2xl bg-beige-100 border border-beige-200 text-center">
+                        <div>
+                            <span class="text-[11px] text-slate-500 font-semibold uppercase block">Price</span>
+                            <span class="font-bold text-navy-900 text-sm sm:text-base">${prop.formattedPrice}</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-slate-500 font-semibold uppercase block">Property Type</span>
+                            <span class="font-bold text-navy-900 text-sm sm:text-base">${prop.type}</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-slate-500 font-semibold uppercase block">Space Area</span>
+                            <span class="font-bold text-navy-900 text-sm sm:text-base">${prop.sqft} sq.ft</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-slate-500 font-semibold uppercase block">Configuration</span>
+                            <span class="font-bold text-navy-900 text-sm sm:text-base">${prop.bhk > 0 ? prop.bhk + ' BHK' : 'N/A'}</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-navy-900 text-lg">Property Overview</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">${prop.fullDesc}</p>
+                    </div>
+
+                    <!-- Amenities List -->
+                    <div class="space-y-3">
+                        <h3 class="font-bold text-navy-900 text-lg">Amenities & Features</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            ${prop.amenities.map(item => `
+                                <div class="flex items-center space-x-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
+                                    <i class="fa-solid fa-circle-check text-gold-500 text-sm"></i>
+                                    <span>${item}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="pt-4 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <button type="button" onclick="closePropertyModal(); openWhatsAppEnquiry('Direct enquiry for ${encodeURIComponent(prop.title)} in ${prop.locality}');" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl text-sm flex items-center justify-center space-x-2 transition-colors">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Enquire on WhatsApp</span>
+                        </button>
+                        <button type="button" onclick="closePropertyModal(); document.getElementById('contact').scrollIntoView({behavior:'smooth'});" class="w-full bg-navy-900 hover:bg-navy-800 text-gold-400 font-bold py-3 px-4 rounded-xl text-sm transition-colors text-center">
+                            Request Site Visit Call
+                        </button>
+                    </div>
+
+                    <p class="text-[11px] text-slate-400 text-center italic">
+                        * Property ID: ${prop.id}. All property specs and images are fictional sample content for portfolio presentation.
+                    </p>
+                </div>
+            `;
+
+            document.getElementById('property-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Lock scroll
+        }
+
+        function closePropertyModal() {
+            document.getElementById('property-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore scroll
+        }
+
+        /**
+         * Dynamic WhatsApp Link Generator
+         */
+        function openWhatsAppEnquiry(message) {
+            const encodedText = encodeURIComponent(`Hello PrimeNest Realty,\n${message}`);
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`;
+            window.open(url, '_blank');
+        }
+
+        /**
+         * Form Submissions Handler (Client Validation & Non-intrusive Feedback)
+         */
+        function handleFormSubmit(event, formType) {
+            event.preventDefault();
+
+            let noticeElem;
+            if (formType === 'buyer') noticeElem = document.getElementById('buyer-form-notice');
+            else if (formType === 'seller') noticeElem = document.getElementById('seller-form-notice');
+            else if (formType === 'contact') noticeElem = document.getElementById('contact-form-notice');
+
+            if (!noticeElem) return;
+
+            // Display success feedback message
+            noticeElem.className = "mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium bg-emerald-50 text-emerald-800 border border-emerald-200 block";
+            noticeElem.innerHTML = `
+                <div class="flex items-start space-x-2">
+                    <i class="fa-solid fa-circle-check text-emerald-600 text-lg mt-0.5"></i>
+                    <div>
+                        <strong class="block text-emerald-900">Enquiry Form Validated!</strong>
+                        <span>Thank you for testing our portfolio demo. In a live production setup, this enquiry will be routed directly to your CRM or email service.</span>
+                    </div>
+                </div>
+            `;
+
+            // Reset form input fields
+            event.target.reset();
+
+            // Auto-hide notice after 8 seconds
+            setTimeout(() => {
+                noticeElem.classList.add('hidden');
+            }, 8000);
+        }
+    </script>
+</body>
+</html>
